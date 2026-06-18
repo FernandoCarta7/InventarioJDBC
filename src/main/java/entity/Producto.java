@@ -1,38 +1,37 @@
 package entity;
 
-import java.util.UUID;
 
 public class Producto {
 
 
-    private UUID idProducto;
+    private long idProducto;
     private String nombre;
     private int cantidad;
     private double precio;
-    private UUID categoria;
+    private long idDategoria;
 
     public Producto(){}
 
-    public Producto(UUID idProducto, String nombre, int cantidad, double precio, UUID categoria) {
+    public Producto(long idProducto, String nombre, int cantidad, double precio, long categoria) {
         this.idProducto = idProducto;
         this.nombre = nombre;
         this.cantidad = cantidad;
         this.precio = precio;
-        this.categoria = categoria;
+        this.idDategoria = categoria;
     }
 
-    public Producto(String nombre, int cantidad, double precio, UUID categoria) {
+    public Producto(String nombre, int cantidad, double precio, long categoria) {
         this.nombre = nombre;
         this.cantidad = cantidad;
         this.precio = precio;
-        this.categoria = categoria;
+        this.idDategoria = categoria;
     }
 
-    public UUID getIdProducto() {
+    public long getIdProducto() {
         return idProducto;
     }
 
-    public void setIdProducto(UUID idProducto) {
+    public void setIdProducto(long idProducto) {
         this.idProducto = idProducto;
     }
 
@@ -60,11 +59,11 @@ public class Producto {
         this.precio = precio;
     }
 
-    public UUID getCategoria() {
-        return categoria;
+    public long getIdDategoria() {
+        return idDategoria;
     }
 
-    public void setCategoria(UUID categoria) {
-        this.categoria = categoria;
+    public void setIdDategoria(long idDategoria) {
+        this.idDategoria = idDategoria;
     }
 }

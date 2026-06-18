@@ -1,5 +1,7 @@
+import view.MenuPrincipal;
+
 public class Main {
     void main(){
-        IO.println("Hola mundo");
+        new MenuPrincipal().start();
     }
 }

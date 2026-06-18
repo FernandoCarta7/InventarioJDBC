@@ -1,4 +1,32 @@
 package util;
 
+import java.util.Scanner;
+
 public class InputUtil {
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static String readString(String message){
+        System.out.println(message);
+        return scanner.nextLine();
+    }
+
+    public static int readInt(String msg) {
+        System.out.print(msg);
+        return Integer.parseInt(scanner.nextLine());
+    }
+
+    public static double readDouble(String msg) {
+        System.out.print(msg);
+        return Double.parseDouble(scanner.nextLine());
+    }
+
+    public static long readLong(String msg) {
+        System.out.print(msg);
+        return Long.parseLong(scanner.nextLine());
+    }
+
+
+
+
 }
